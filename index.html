@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search category..." />
+      <span class="search-icon">🔍</span>
+    </div>
+    <button id="darkModeToggle">🌓</button>
+  </header>
+
+  <section class="filter-buttons">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+    <button data-filter="technology">Technology</button>
+  </section>
+
+  <main id="gallery" class="gallery"></main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="closeBtn">✖</button>
+    <button id="prev">◀</button>
+    <img id="lightboxImg" src="" alt="preview" />
+    <button id="next">▶</button>
+  </div>
+</body>
+</html>
+
+
+
+
